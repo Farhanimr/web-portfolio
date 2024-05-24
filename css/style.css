@@ -1,0 +1,85 @@
+html {
+    position: relative;
+}
+
+body{
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
+.jumbotron {
+    background-image: url('../img/porto/bg.jpg');
+    background-size: cover; /* Untuk menutupi seluruh area elemen */
+    background-attachment: fixed;
+    background-position: 0 -250px;
+    height: 60vh;
+    color: #faf8f8;
+    overflow: hidden;
+}
+.jumbotron h1, jumbotron p {
+    text-shadow: 1px 1px 10px rgba(253, 252, 252, 0.5);
+
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #faf8f8;
+
+}
+
+hr {
+    width: 250px;
+    border-top: 3px  solid #000000;
+}
+
+section {
+    min-height: 600px;
+}
+
+.pkiri, .pkanan {
+    opacity: 0;
+    transform:  translate(-50px,0) rotate(15deg);
+    transition: 1s;
+}
+.pkanan {
+    transform: translate(50px,0) rotate(-15deg);
+}
+
+.pkiri.pmuncul, .pkanan.pmuncul {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.portfolio {
+    background-color: #eee;
+}
+
+.portfolio .thumbnail {
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: 1s;
+}
+
+.portfolio .thumbnail.muncul {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.contact{
+    min-height: 800px;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 100px;
+    background-color: black;
+    padding-top: 30px;
+}
+
+footer p{
+    color: #aaa;
+    font-size: 0.9em;
+}
