@@ -139,7 +139,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-sm-8">
-                    <form>
+                    <form id="contactForm">
                         <div class="form-group">
                             <label for="nama">Nama</label>
                             <input type="text" id="nama" class="form-control" placeholder="masukkan nama">
@@ -150,16 +150,19 @@
                         </div>
                         <div class="form-group">
                             <label for="telp">No Telepon</label>
-                            <input type="telp" id="telp" class="form-control" placeholder="masukkan nomor telp">
+                            <input type="text" id="telp" class="form-control" placeholder="masukkan nomor telp">
                         </div>
-                        <select class="form-control">
-                            <option>-- Pilih Kategori --</option>
-                            <option>Digital Marketing</option>
-                            <option>Web Developer</option>
-                        </select>
+                        <div class="form-group">
+                            <label for="kategori">Kategori</label>
+                            <select id="kategori" class="form-control">
+                                <option>-- Pilih Kategori --</option>
+                                <option>Digital Marketing</option>
+                                <option>Web Developer</option>
+                            </select>
+                        </div>
                         <div class="form-group">
                             <label for="pesan">Pesan</label>
-                            <textarea class="form-control" rows="10" placeholder="masukkan pesan"></textarea>
+                            <textarea id="pesan" class="form-control" rows="10" placeholder="masukkan pesan"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary mt-2">Kirim Pesan</button>
                     </form>
